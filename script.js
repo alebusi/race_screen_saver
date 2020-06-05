@@ -102,11 +102,13 @@ function cambioColore(div) {
 function cambioCampione() {
   if (accelero) {
       accelero=false;
+      mode=0;
       x=300;
       y=300;
   }
   else {    
       accelero=true;
+      mode=1;
   }
   ind_c+=1;
   if (ind_c > colori.length-1) ind_c=0;
