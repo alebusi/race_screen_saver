@@ -93,6 +93,16 @@ function keypress_handler(event) {
 
 function gira(angolo) {
     angle+=angolo;
+    try {clearInterval(myTimer);}
+       catch(err){}
+    myTimer = setInterval(function() {
+	   angle+=angolo;
+	}, 24);
+}
+
+function resetInt() {
+    try {clearInterval(myTimer);}
+		catch(err){}
 }
 
 function cambioColore(div) {
