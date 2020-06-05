@@ -54,15 +54,15 @@ html, body {
 
 .sinistra {
     position: fixed;
-    width: 50vw;
+    width: 20vw;
     height: 99vh;
     touch-action: none;
 }
 
 .destra {
     position: fixed;
-    width: 50vw;
+    width: 20vw;
     height: 99vh;
-    left: 50vw;
+    left: 80vw;
     touch-action: none;
 }
