@@ -5,7 +5,7 @@ var ind_anim = 0;
 x = 300;
 y = 300;
 speed = 0;
-max_speed = 10;
+max_speed = 8;
 accelero=false;
 angle = 0;
 mod = 0;
@@ -113,6 +113,7 @@ function cambioCampione() {
   if (accelero) {
       accelero=false;
       mod=0;
+      angle=0;
       x=300;
       y=300;
   }
