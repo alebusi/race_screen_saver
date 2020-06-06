@@ -97,7 +97,7 @@ function gira(angolo) {
        catch(err){}
     myTimer = setInterval(function() {
 	   angle+=angolo;
-	}, 100);
+	}, 30);
 }
 
 function resetInt() {
