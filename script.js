@@ -75,10 +75,10 @@ function keypress_handler(event) {
     accelero=true;
   }
   if (event.keyCode == 190) {
-    angle -= 6;
+    angle -= 8;
   }
   if (event.keyCode == 189) {
-    angle += 6;
+    angle += 8;
   }
   if (event.keyCode == 38) {
     max_speed+=1;
