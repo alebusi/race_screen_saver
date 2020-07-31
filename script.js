@@ -116,10 +116,12 @@ function cambioCampione() {
       angle=0;
       x=300;
       y=300;
+      document.getElementById("canvas").style.zIndex = "-1";
   }
   else {    
       accelero=true;
       mod=1;
+      document.getElementById("canvas").style.zIndex = "1";
   }
   ind_c+=1;
   if (ind_c > colori.length-1) ind_c=0;
