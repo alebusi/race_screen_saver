@@ -50,7 +50,7 @@ html, body {
     border-radius: 6vw;
     border: solid 1px white;
     background-color: white;
-    z-index: 2;
+    z-index: 3;
 }
 
 .sinistra {
@@ -58,6 +58,7 @@ html, body {
     width: 20vw;
     height: 99vh;
     touch-action: none;
+    z-index: 2;
 }
 
 .destra {
@@ -66,4 +67,5 @@ html, body {
     height: 99vh;
     left: 80vw;
     touch-action: none;
+    z-index: 2;
 }
