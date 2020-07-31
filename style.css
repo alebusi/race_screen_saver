@@ -50,6 +50,7 @@ html, body {
     border-radius: 6vw;
     border: solid 1px white;
     background-color: white;
+    z-index: 2;
 }
 
 .sinistra {
