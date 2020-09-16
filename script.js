@@ -50,11 +50,11 @@ function draw() {
     y += (speed * mod) * Math.sin(Math.PI / 180 * angle);
 
     if (x > canvas.width) {
-	x=-20;
+	x=0;
     }
 
     if (x < 0) {
-	x=canvas.width-20;
+	x=canvas.width+20;
     }
 
     if (y > canvas.height) {
