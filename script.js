@@ -49,6 +49,22 @@ function draw() {
     x += (speed * mod) * Math.cos(Math.PI / 180 * angle);
     y += (speed * mod) * Math.sin(Math.PI / 180 * angle);
 
+    if (x > canvas.width) {
+	x=-20;
+    }
+
+    if (x < 0) {
+	x=canvas.width-20;
+    }
+
+    if (y > canvas.height) {
+	y=-20;
+    }
+
+    if (y < 0) {
+	x=canvas.height+20;
+    }
+
     //if (x > 100 && x < canvas.width-100 && y > 70 && y < canvas.height-100) {
       context.save();
       context.translate(x, y);
