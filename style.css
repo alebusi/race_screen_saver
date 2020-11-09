@@ -59,6 +59,7 @@ html, body {
     width: 20vw;
     height: 99vh;
     touch-action: none;
+    user-select: none; /* Standard syntax */
     z-index: 2;
 }
 
@@ -68,5 +69,6 @@ html, body {
     height: 99vh;
     left: 80vw;
     touch-action: none;
+    user-select: none; /* Standard syntax */
     z-index: 2;
 }
