@@ -23,7 +23,7 @@ var moveInterval = setInterval(function () {
 }, 40);
 
 var guidaInterval = setInterval(function () {
-    gira();
+    guida();
 }, 2000);
 
 function randomIntFromInterval(min,max) {
@@ -101,9 +101,8 @@ function keypress_handler(event) {
   }
 }
 
-function guida(angolo) {
-    angolo=randomIntFromInterval(-5,5);
-    angle+=angolo;
+function guida() {
+    angle+==randomIntFromInterval(-5,5);
 }
 
 function cambioColore(div) {
