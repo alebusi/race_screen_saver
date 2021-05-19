@@ -9,6 +9,7 @@ max_speed = 16;
 accelero=false;
 angle = 0;
 mod = 0;
+angolo=0;
 
 canvas = document.getElementById("canvas");
 context = canvas.getContext("2d");
@@ -20,7 +21,7 @@ window.addEventListener("keyup", keyup_handler, false);
 
 var moveInterval = setInterval(function () {
     draw();
-}, 80);
+}, 40);
 
 var guidaInterval = setInterval(function () {
     guida();
@@ -33,6 +34,7 @@ function randomIntFromInterval(min,max) {
 function draw() {
     context = canvas.getContext("2d");
     context.clearRect(0, 0, 1800, 1000);
+    angle+=angolo;
     /*
     context.fillStyle = "rgb(200, 100, 220)";
     context.fillRect(50, 50, 100, 100);
@@ -102,7 +104,7 @@ function keypress_handler(event) {
 }
 
 function guida() {
-    angle+=randomIntFromInterval(-16,16);
+    angolo=randomIntFromInterval(-16,16);
 }
 
 function cambioColore(div) {
