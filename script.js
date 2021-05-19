@@ -5,7 +5,7 @@ var ind_anim = 0;
 x = 300;
 y = 300;
 speed = 0;
-max_speed = 16;
+max_speed = 12;
 accelero=false;
 angle = 0;
 mod = 0;
@@ -104,7 +104,7 @@ function keypress_handler(event) {
 }
 
 function guida() {
-    angolo=randomIntFromInterval(-16,16);
+    angolo=randomIntFromInterval(-5,5);
 }
 
 function cambioColore(div) {
