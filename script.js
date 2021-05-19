@@ -20,7 +20,7 @@ window.addEventListener("keyup", keyup_handler, false);
 
 var moveInterval = setInterval(function () {
     draw();
-}, 40);
+}, 80);
 
 var guidaInterval = setInterval(function () {
     guida();
