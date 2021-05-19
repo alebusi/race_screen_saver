@@ -22,13 +22,13 @@ var moveInterval = setInterval(function () {
     draw();
 }, 40);
 
-/*
-function verTastoPremuto(event) {
-  if (event.keyCode == 32) {
-      cambioCampione();
-  }	
+var guidaInterval = setInterval(function () {
+    gira();
+}, 2000);
+
+function randomIntFromInterval(min,max) {
+    return Math.floor(Math.random()*(max-min+1)+min);
 }
-*/
 
 function draw() {
     context = canvas.getContext("2d");
@@ -101,18 +101,9 @@ function keypress_handler(event) {
   }
 }
 
-function gira(angolo) {
+function guida(angolo) {
+    angolo=randomIntFromInterval(-5,5);
     angle+=angolo;
-    try {clearInterval(myTimer);}
-       catch(err){}
-    myTimer = setInterval(function() {
-	   angle+=angolo;
-	}, 30);
-}
-
-function resetInt() {
-    try {clearInterval(myTimer);}
-		catch(err){}
 }
 
 function cambioColore(div) {
