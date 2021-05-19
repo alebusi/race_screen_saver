@@ -102,7 +102,7 @@ function keypress_handler(event) {
 }
 
 function guida() {
-    angle+==randomIntFromInterval(-5,5);
+    angle+=randomIntFromInterval(-5,5);
 }
 
 function cambioColore(div) {
